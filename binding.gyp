@@ -16,11 +16,11 @@
             'conditions': [
               ['target_arch=="ia32"', {
                 'libraries': [
-                  '<(PRODUCT_DIR)/../../windows/lib/x86/libzmq-v100-mt-3_2_2.lib',
+                  '<(PRODUCT_DIR)/../../windows/lib/x86/libzmq-v120-mt-4_2_0.lib',
                 ]
               },{
                 'libraries': [
-                  '<(PRODUCT_DIR)/../../windows/lib/x64/libzmq-v100-mt-3_2_2.lib',
+                  '<(PRODUCT_DIR)/../../windows/lib/x64/libzmq-v120-mt-4_2_0.lib',
                 ]
               }]
             ],
