@@ -1324,7 +1324,7 @@ init(Handle<Object> target) {
       _wfullpath(path, pathDir, MAX_PATH);
       set_dll_directory(path);
       caller.set_func(set_dll_directory);
-      LoadLibrary("libzmq-v120-mt-4_2_0");
+      LoadLibrary("libzmq");
     }
   }
 #endif
