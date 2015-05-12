@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "nan": "~1.8.0",
-    "bindings": "~1.1.1"
+    "bindings": "~1.2.1"
   },
   "devDependencies": {
     "should": "2.1.x",
