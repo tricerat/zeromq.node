@@ -1,3 +1,33 @@
+2.14.0 / 2015-11-20
+===================
+
+  * A socket.read() method was added to retrieve messages while paused [sshutovskyi]
+  * socket.send() now takes a callback as 3rd argument which is called once the message is sent [ronkorving]
+  * Now tested on Node.js 0.8, 0.10, 0.12, 4 and 5 [ronkorving]
+
+2.13.0 / 2015-08-26
+===================
+
+  * io.js 3.x compatible [kkoopa]
+  * corrections to type casting operations [kkoopa]
+  * "make clean" now also removes node_modules [reqshark]
+
+2.12.0 / 2015-07-10
+===================
+
+  * Massive improvements to monitoring code, with new documentation and tests [ValYouW]
+  * Improved documentation [reqshark]
+  * Updated bindings from ~1.1.1 to ~1.2.1 [reqshark]
+  * Test suite improvements [reqshark]
+  * Updated the Windows bundle to ZeroMQ 4.0.4 [kkoopa]
+  * License attribute added to package.json [pdehaan]
+
+2.11.1 / 2015-05-21
+===================
+
+  * io.js 2.x compatible [transcranial]
+  * replaced asserts with proper exceptions [reqshark]
+
 2.11.0 / 2015-03-31
 ===================
 
