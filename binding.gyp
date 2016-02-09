@@ -8,6 +8,7 @@
       ],
       'conditions': [
         ['OS=="win"', {
+          'win_delay_load_hook': 'true',
           'include_dirs': ['windows/include'],
           'link_settings': {
             'libraries': [

@@ -1,6 +1,6 @@
 {
   "name": "zmq",
-  "version": "2.11.0",
+  "version": "2.14.0",
   "description": "Bindings for node.js and io.js to ZeroMQ",
   "main": "index",
   "repository": {
@@ -8,7 +8,7 @@
     "url": "http://github.com/JustinTulloss/zeromq.node.git"
   },
   "dependencies": {
-    "nan": "~1.8.4",
+    "nan": "~2.1.0",
     "bindings": "~1.2.1"
   },
   "devDependencies": {
@@ -20,9 +20,10 @@
     "node": ">=0.8"
   },
   "scripts": {
-    "test": "make test"
+    "test": "mocha --expose-gc --slow 2000 --timeout 600000"
   },
   "keywords": ["zeromq", "zmq", "0mq", "ømq", "libzmq", "native", "binding", "addon"],
+  "license": "MIT",
   "author": "Justin Tulloss <justin.tulloss@gmail.com> (http://justin.harmonize.fm)",
   "contributors": [
     "Justin Tulloss <justin.tulloss@gmail.com> (http://justin.harmonize.fm)",
@@ -54,6 +55,7 @@
     "Brian Lalor (https://github.com/blalor)",
     "Benjamin Byholm (https://github.com/kkoopa)",
     "Alejandro (https://github.com/Minjung)",
-    "Eli Skeggs <skeggse@gmail.com> (https://github.com/skeggse)"
+    "Eli Skeggs <skeggse@gmail.com> (https://github.com/skeggse)",
+    "Bent Cardan <bent@nothingsatisfies.com> (https://github.com/reqshark)"
   ]
 }
