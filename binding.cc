@@ -1304,6 +1304,7 @@ namespace zmq {
     opts_binary.insert(48); // ZMQ_CURVE_PUBLICKEY
     opts_binary.insert(49); // ZMQ_CURVE_SECRETKEY
     opts_binary.insert(50); // ZMQ_CURVE_SERVERKEY
+    opts_int.insert(51);  // ZMQ_PROBE_ROUTE
     opts_binary.insert(55); // ZMQ_ZAP_DOMAIN
     #endif
 
