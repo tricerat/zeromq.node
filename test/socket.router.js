@@ -3,6 +3,31 @@ var zmq = require('..')
   , semver = require('semver');
 
 describe('socket.router', function(){
+  it('should support a connection probe', function (done) {
+    if (!semver.gte(zmq.version, '4.0.0')) {
+      done();
+      return console.warn('Test requires libzmq >= 4.0.0');
+    }
+
+    var a = zmq.socket('router')
+      , b = zmq.socket('router');
+
+    a.setsockopt(zmq.ZMQ_PROBE_ROUTE, 1);
+
+    a.bind('tcp://127.0.0.1:12345', function () {
+      b.on('message', function(envelope, message) {
+        message.length.should.equal(0);
+
+        b.close();
+        a.close();
+        done();
+      });
+
+      b.connect('tcp://127.0.0.1:12345');
+    });
+
+  });
+
   it('should handle the unroutable', function(done){
     var complete = 0;
 
