@@ -12,8 +12,9 @@ describe('socket.router', function(){
     var a = zmq.socket('router')
       , b = zmq.socket('router');
 
-    a.setsockopt(zmq.ZMQ_PROBE_ROUTE, 1);
+    a.setsockopt(zmq.ZMQ_PROBE_ROUTER, 1);
 
+    // should send an empty message as soon as a connection is made
     a.bind('tcp://127.0.0.1:12345', function () {
       b.on('message', function(envelope, message) {
         message.length.should.equal(0);
